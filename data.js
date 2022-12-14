@@ -1,0 +1,51 @@
+export let data = [
+  {
+    nome: 'Jessica',
+    peso: 47,
+    altura: 1.54,
+    gordura: 17,
+    imc: 19.82,
+  },
+  {
+    nome: 'João',
+    peso: 80,
+    altura: 1.8,
+    gordura: 20,
+    imc: 24.69,
+  },
+  {
+    nome: 'Maria',
+    peso: 60,
+    altura: 1.6,
+    gordura: 30,
+    imc: 23.44,
+  },
+  {
+    nome: 'José',
+    peso: 90,
+    altura: 1.9,
+    gordura: 25,
+    imc: 24.93,
+  },
+  {
+    nome: 'Ana',
+    peso: 50,
+    altura: 1.5,
+    gordura: 15,
+    imc: 22.22,
+  },
+  {
+    nome: 'Pedro',
+    peso: 70,
+    altura: 1.7,
+    gordura: 25,
+    imc: 24.22,
+  },
+  {
+    nome: 'Carlos',
+    peso: 85,
+    altura: 1.85,
+    gordura: 30,
+    imc: 24.93,
+  },
+];
