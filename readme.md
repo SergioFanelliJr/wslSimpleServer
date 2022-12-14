@@ -8,7 +8,7 @@ Os dados podem ser modificados no arquivo `data.js`
 
 ## Instalação
 
-Após clonar o repositório, vá até o diretório e inicie com `npm start`
+Após clonar o repositório, vá até o diretório e digite `npm install` e inicie o servidor com `npm start`
 
 `Ctrl+C` fecha o servidor
 
