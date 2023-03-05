@@ -6,36 +6,60 @@ O servidor foi pensado para uso em instancias WSL e não foi testado em um ambie
 
 Os dados podem ser modificados no arquivo `data.js`
 
+---
+
 ## Instalação
 
-Após clonar o repositório, vá até o diretório e digite `npm install` e inicie o servidor com `npm start`
+Clone o repositório
 
-`Ctrl+C` fecha o servidor
+    git clone https://github.com/SergioFanelliJr/wslSimpleServer.git
 
+Após, vá até o diretório com
+    
+    cd wslSimpleServer
+
+
+ e digite 
+
+    `npm install` 
+
+---
+## Utilização
+
+Inicie o servidor com 
+    
+    npm start
+
+Feche o servidor com
+
+    Ctrl+C 
+
+---
 ## Acessando na mesma maquina
 
-Ao iniciar, o servidor loga o endereço onde pode ser acessado.
+Ao iniciar, o servidor mostra no terminal o endereço onde pode ser acessado.
 
+---
 
 ## Acessando o servidor através de outra maquina na mesma rede:
 
-Para que seja possível acessar o site através da local network, é preciso abrir o powershell como admin e utilizar o seguinte comando:
- - O IP é o mesmo que aparece no console ao abrir o servidor
+Para que seja possível acessar o site através da local network, é preciso abrir o powershell como administrador e utilizar o seguinte comando:
 
+- O `<IP>` deve ser substituído pelo IP que aparece no terminal ao iniciar o servidor.
 
-        netsh interface portproxy add v4tov4 listenport=4040 listenaddress=0.0.0.0 connectport=4040 connectaddress=<ip>
+```powershell	
+netsh interface portproxy add v4tov4 listenport=4040 listenaddress=0.0.0.0 connectport=4040 connectaddress=<ip>
+```
 
-Para conectar no servidor de outra maquina, utilize o IPv4 do _**Windows**_ e não o que aparece no servidor, seguido pela porta 4040.
-
-    xxx.xxx.xx.xx:4040
-
-## Obtendo o ip do "host" (Windows)
+### **Obtendo o ip do "host" (Windows)**
 
 O metodo mais fácil de obter o ip do Windows é através do comando ipconfig no shell do Windows:
 
     ipconfig | findstr /i "ipv4"
 
+Para conectar no servidor de outra maquina, precisamos do IPv4 do _**Windows**_ e ***não o que aparece no servidor***, seguido pela porta 4040.
 
+    xxx.xxx.xx.xx:4040
 
 # Erro de porta em uso
 
