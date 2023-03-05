@@ -1,6 +1,6 @@
 # SimpleBackEnd for WSL
 
-Esse servidor tenta oferecer uma forma mais "real" de desenvolver um site que recebe informações de uma API.
+Simula uma API. Retorna um JSON com dados contidos no arquivo `data.js`
 
 O servidor foi pensado para uso em instancias WSL e não foi testado em um ambiente linux "puro".
 
